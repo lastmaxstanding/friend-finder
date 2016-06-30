@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder Survey</title>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/styles.css">
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+		
+</head>
+<body id="survey">
+
+	<div class="container">
+
+		<h2>Friend Finder Survey</h2>
+
+		<form> <!--action="/api/friends" method="POST"-->
+			<div class="friendInfo">
+				<p><label for="name">Name</label>
+				<input type="text" name="name" id="name" class="form-control"></p>
+
+				<p><label for="photo">Photo (required)</label>
+				<input type="text" name="photo" id="photo" class="form-control"></p>
+			</div>
+
+
+			<div class="qSection">
+				<p class="qHeader">Question 1</p>
+				<p class="question">You enjoy reading</p>
+				<p class="options">
+					<input type="radio" name="q1" value="1">Strongly Agree
+					<input type="radio" name="q1" value="2">Agree
+					<input type="radio" name="q1" value="3">Sometimes
+					<input type="radio" name="q1" value="4">Disagree
+					<input type="radio" name="q1" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 2</p>
+				<p class="question">You are the life of the party</p>
+				<p class="options">
+					<input type="radio" name="q2" value="1">Strongly Agree
+					<input type="radio" name="q2" value="2">Agree
+					<input type="radio" name="q2" value="3">Sometimes
+					<input type="radio" name="q2" value="4">Disagree
+					<input type="radio" name="q2" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 3</p>
+				<p class="question">You enjoy the company of others</p>
+				<p class="options">
+					<input type="radio" name="q3" value="1">Strongly Agree
+					<input type="radio" name="q3" value="2">Agree
+					<input type="radio" name="q3" value="3">Sometimes
+					<input type="radio" name="q3" value="4">Disagree
+					<input type="radio" name="q3" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 4</p>
+				<p class="question">You enjoy quiet</p>
+				<p class="options">
+					<input type="radio" name="q4" value="1">Strongly Agree
+					<input type="radio" name="q4" value="2">Agree
+					<input type="radio" name="q4" value="3">Sometimes
+					<input type="radio" name="q4" value="4">Disagree
+					<input type="radio" name="q4" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 5</p>
+				<p class="question">You enjoy social activities</p>
+				<p class="options">
+					<input type="radio" name="q5" value="1">Strongly Agree
+					<input type="radio" name="q5" value="2">Agree
+					<input type="radio" name="q5" value="3">Sometimes
+					<input type="radio" name="q5" value="4">Disagree
+					<input type="radio" name="q5" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 6</p>
+				<p class="question">You are close to your family</p>
+				<p class="options">
+					<input type="radio" name="q6" value="1">Strongly Agree
+					<input type="radio" name="q6" value="2">Agree
+					<input type="radio" name="q6" value="3">Sometimes
+					<input type="radio" name="q6" value="4">Disagree
+					<input type="radio" name="q6" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 7</p>
+				<p class="question">You have strong values</p>
+				<p class="options">
+					<input type="radio" name="q7" value="1">Strongly Agree
+					<input type="radio" name="q7" value="2">Agree
+					<input type="radio" name="q7" value="3">Sometimes
+					<input type="radio" name="q7" value="4">Disagree
+					<input type="radio" name="q7" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 8</p>
+				<p class="question">You enjoy pets</p>
+				<p class="options">
+					<input type="radio" name="q8" value="1">Strongly Agree
+					<input type="radio" name="q8" value="2">Agree
+					<input type="radio" name="q8" value="3">Sometimes
+					<input type="radio" name="q8" value="4">Disagree
+					<input type="radio" name="q8" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 9</p>
+				<p class="question">You like to be around people</p>
+				<p class="options">
+					<input type="radio" name="q9" value="1">Strongly Agree
+					<input type="radio" name="q9" value="2">Agree
+					<input type="radio" name="q9" value="3">Sometimes
+					<input type="radio" name="q9" value="4">Disagree
+					<input type="radio" name="q9" value="5">Strongly Disagree
+				</p>
+
+				<p class="qHeader">Question 10</p>
+				<p class="question">You know yourself</p>
+				<p class="options">
+					<input type="radio" name="q10" value="1">Strongly Agree
+					<input type="radio" name="q10" value="2">Agree
+					<input type="radio" name="q10" value="3">Sometimes
+					<input type="radio" name="q10" value="4">Disagree
+					<input type="radio" name="q10" value="5">Strongly Disagree
+				</p>
+
+			</div>
+
+
+			<p id="subContainer">
+				<button id="submit">
+					<span class="glyphicon glyphicon-search" aria-hidden="true"></span> Submit
+				</button>
+			</p>
+		</form>
+	</div>
+</body>
+</html>
+
